@@ -1,0 +1,151 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+.app-title {
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: pink;
+}
+
+main {
+	height: 90%;
+	display: flex;
+}
+
+.enter-todos-container {
+	flex-basis: 25%;
+	background-color: rgb(5, 107, 5);
+}
+
+.display-todos-container {
+	flex-basis: 75%;
+	background-color: rgb(191, 122, 255);
+	display: flex;
+	flex-direction: column;
+}
+
+.todo-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+}
+
+.todo-form input {
+	height: 2rem;
+	padding: 0 0.25rem;
+	border-radius: 0.25rem;
+}
+
+.task-description-input {
+	resize: none;
+	padding: 0.25rem;
+	border-radius: 0.25rem;
+}
+
+.submit-task-button,
+.delete-button {
+	height: 2rem;
+	cursor: pointer;
+	border-radius: 0.25rem;
+}
+
+.filter-container {
+	flex-basis: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 0 4rem;
+	gap: 0.5rem;
+	/* border: 2px solid blue; */
+}
+
+.filter-element {
+	width: 10rem;
+	height: 2rem;
+	border-radius: 0.25rem;
+}
+
+.todo-items-container {
+	flex-basis: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.display-todos-header {
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	/* border: 2px solid azure; */
+}
+
+.display-todos-header span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.task-number-header,
+.todo-number {
+	flex-basis: 5%;
+	background-color: pink;
+}
+
+.task-title-header,
+.todo-title {
+	flex-basis: 20%;
+	background-color: green;
+}
+
+.task-date-header,
+.todo-date {
+	flex-basis: 15%;
+	background-color: pink;
+}
+.task-description-header,
+.todo-description {
+	flex-basis: 45%;
+	background-color: green;
+}
+
+.task-delete-header,
+.todo-delete {
+	flex-basis: 15%;
+	background-color: pink;
+}
+
+.title-error,
+.date-error,
+.description-error {
+	visibility: hidden;
+}
+
+.todo-ul {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.todo-row {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.todo-row span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
